@@ -1,3 +1,5 @@
+// JUnit Test to validate the User Entry for First Name, Last Name, Email, Mobile, and Password.
+
 package com.bridgelabz;
 
 import org.junit.jupiter.api.Test;
