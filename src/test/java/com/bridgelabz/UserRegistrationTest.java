@@ -1,65 +1,68 @@
-// UC12 - Refactor the Code to throw custom exceptions in case of Invalid User Details - Rewrite all Test Cases to take in Custom
+// UC-13 : Refactor the Code to use Lambda Function to validate User Entry
 
 package com.bridgelabz;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import java.util.Scanner;
 
 public class UserRegistrationTest
 {
-    @Test
-    public void FirstName_WhenNotProperFormat_ShouldThrowException() throws CustomException {
-        UserRegistration validator = new UserRegistration();
-        try {
-            boolean result = validator.validateFirstName("Nagr@j");
-            Assertions.assertEquals(true, result);
-        } catch (CustomException e) {
-            System.out.println(e.getMessage());
-        }
-    }
+    public static void main(String[] args)
+    {
+        // Taking inputs from the user
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter first name you want to check");
+        String firstName = scanner.nextLine();
+        System.out.println("Enter Last name you want to check");
+        String lastName = scanner.nextLine();
+        System.out.println("Enter email you want to check");
+        String email = scanner.nextLine();
+        System.out.println("Enter mobile number you want to check");
+        String mobile = scanner.nextLine();
+        System.out.println("Enter password you want to check");
+        String password = scanner.nextLine();
 
-    @Test
-    public void givenLastName_WhenNotProperFormat_ShouldThrowException() {
-        UserRegistration validator = new UserRegistration();
-        try {
-            boolean result = validator.validateLastName("Nagraj Panchal");
-            Assertions.assertEquals(true, result);
-        } catch (CustomException e) {
-            System.out.println(e.getMessage());
-        }
-    }
+        // Defining pattern of the various inputs
+        String first_Name_Pattern = "^[A-Z ][a-z]{3,}";
+        String last_Name_Pattern = "^[A-Z ][a-z]{3,}";
+        String mobile_Number_Pattern = "^[0-9]{2}\\s{1}[0-9]{10}$";
+        String password_Pattern = "(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=]).{8,}";
+        String email_Pattern = "^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*" + "@([a-zA-Z0-9][-]?)+[.][a-zA-Z]{2,4}([.]{2,4})?$";
 
-    @Test
-    public void givenMobileNumber_WhenNotProperFormat_ShouldThrowException() {
-        UserRegistration validator = new UserRegistration();
-        try {
+        // Using lambda expression to validate inputs here we are calling interface of UserValidator
+        UserValidation validateFirstName = (firstNameValid) -> firstNameValid.matches(first_Name_Pattern);
+        UserValidation validateLastName = (lastNameValid) -> lastNameValid.matches(last_Name_Pattern);
+        UserValidation validateMobileNumber = (mobileNumberValid) -> mobileNumberValid.matches(mobile_Number_Pattern);
+        UserValidation validatePassword = (passwordValid) -> passwordValid.matches(password_Pattern);
+        UserValidation validateEmail = (emailValid) -> emailValid.matches(email_Pattern);
 
-            boolean result = validator.vaildateMobileNumber("91 9739713842");
-            Assertions.assertEquals(true, result);
-        } catch (CustomException e) {
-            System.out.println(e.getMessage());
-        }
-    }
+        boolean checkFirstName = validateFirstName.validate(firstName);
+        if (checkFirstName == true)
+            System.out.println("First name is Valid");
+        else
+            System.out.println("First name is Invalid");
 
-    @Test
-    public void givenPassword_WhenNotProperFormat_ShouldThrowException() {
-        UserRegistration validator = new UserRegistration();
-        try {
-            boolean result = validator.vaildatePassword("Password123");
-            Assertions.assertEquals(true, result);
-        } catch (CustomException e) {
-            System.out.println(e.getMessage());
-        }
-    }
+        boolean checkLastName = validateLastName.validate(lastName);
+        if (checkLastName == true)
+            System.out.println("Last name is Valid");
+        else
+            System.out.println("Last name is Invalid");
 
-    @Test
-    public void givenEmail_WhenNotProper_ShouldThrowException() {
-        UserRegistration validator = new UserRegistration();
-        try {
-            boolean result = validator.vaildateEmail("nagraj@panchal.com");
-            Assertions.assertEquals(true, result);
-        } catch (CustomException e) {
-            System.out.println(e.getMessage());
-        }
+        boolean checkMobileNumber = validateMobileNumber.validate(mobile);
+        if (checkMobileNumber == true)
+            System.out.println("Mobile number is Valid");
+        else
+            System.out.println("Mobile number is Invalid");
+
+        boolean checkPassword = validatePassword.validate(password);
+        if (checkPassword == true)
+            System.out.println("Password is Valid");
+        else
+            System.out.println("Password is Invalid");
+
+        boolean checkEmail = validateEmail.validate(email);
+        if (checkEmail == true)
+            System.out.println("Email Id is Valid");
+        else
+            System.out.println("Email Id is Invalid");
     }
 }
