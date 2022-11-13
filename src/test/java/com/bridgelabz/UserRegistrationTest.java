@@ -11,7 +11,7 @@ public class UserRegistrationTest
     public void FirstName_WhenNotProperFormat_ShouldThrowException() throws CustomException {
         UserRegistration validator = new UserRegistration();
         try {
-            boolean result = validator.validateFirstName("Shal@sh");
+            boolean result = validator.validateFirstName("Nagr@j");
             Assertions.assertEquals(true, result);
         } catch (CustomException e) {
             System.out.println(e.getMessage());
@@ -22,7 +22,7 @@ public class UserRegistrationTest
     public void givenLastName_WhenNotProperFormat_ShouldThrowException() {
         UserRegistration validator = new UserRegistration();
         try {
-            boolean result = validator.validateLastName("Shalesh dutt");
+            boolean result = validator.validateLastName("Nagraj Panchal");
             Assertions.assertEquals(true, result);
         } catch (CustomException e) {
             System.out.println(e.getMessage());
@@ -34,7 +34,7 @@ public class UserRegistrationTest
         UserRegistration validator = new UserRegistration();
         try {
 
-            boolean result = validator.vaildateMobileNumber("91 94251099");
+            boolean result = validator.vaildateMobileNumber("91 9739713842");
             Assertions.assertEquals(true, result);
         } catch (CustomException e) {
             System.out.println(e.getMessage());
@@ -56,7 +56,7 @@ public class UserRegistrationTest
     public void givenEmail_WhenNotProper_ShouldThrowException() {
         UserRegistration validator = new UserRegistration();
         try {
-            boolean result = validator.vaildateEmail("abc.100yahoo.com");
+            boolean result = validator.vaildateEmail("nagraj@panchal.com");
             Assertions.assertEquals(true, result);
         } catch (CustomException e) {
             System.out.println(e.getMessage());
