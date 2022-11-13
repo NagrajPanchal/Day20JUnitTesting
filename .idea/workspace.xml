@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4e85e31-d97c-4ffa-9298-74ed5705e2bf" name="Changes" comment="Added : Parameterised Test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/CustomException.java" afterDir="false" />
+    <list default="true" id="a4e85e31-d97c-4ffa-9298-74ed5705e2bf" name="Changes" comment="Added : Code to throw custom exceptions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/UserRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/UserRegistration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/bridgelabz/UserRegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/UserRegistrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,22 +53,7 @@
       <recent name="com.bridgelabz" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserRegistrationTest">
-    <configuration name="ParameterisedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Day20JUnitTesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bridgelabz.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bridgelabz" />
-      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.ParameterisedTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserRegistrationTest.givenEmail_WhenNotProper_ShouldThrowException">
     <configuration name="UserRegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Day20JUnitTesting" />
       <extension name="coverage">
@@ -86,10 +69,77 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserRegistrationTest.FirstName_WhenNotProperFormat_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Day20JUnitTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bridgelabz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bridgelabz" />
+      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.UserRegistrationTest" />
+      <option name="METHOD_NAME" value="FirstName_WhenNotProperFormat_ShouldThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRegistrationTest.givenEmail_WhenNotProper_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Day20JUnitTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bridgelabz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bridgelabz" />
+      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.UserRegistrationTest" />
+      <option name="METHOD_NAME" value="givenEmail_WhenNotProper_ShouldThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRegistrationTest.givenLastName_WhenNotProperFormat_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Day20JUnitTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bridgelabz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bridgelabz" />
+      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.UserRegistrationTest" />
+      <option name="METHOD_NAME" value="givenLastName_WhenNotProperFormat_ShouldThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRegistrationTest.givenMobileNumber_WhenNotProperFormat_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Day20JUnitTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bridgelabz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bridgelabz" />
+      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.UserRegistrationTest" />
+      <option name="METHOD_NAME" value="givenMobileNumber_WhenNotProperFormat_ShouldThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRegistrationTest.givenEmail_WhenNotProper_ShouldThrowException" />
+        <item itemvalue="JUnit.UserRegistrationTest.givenMobileNumber_WhenNotProperFormat_ShouldThrowException" />
+        <item itemvalue="JUnit.UserRegistrationTest.givenLastName_WhenNotProperFormat_ShouldThrowException" />
         <item itemvalue="JUnit.UserRegistrationTest" />
-        <item itemvalue="JUnit.ParameterisedTest" />
+        <item itemvalue="JUnit.UserRegistrationTest.FirstName_WhenNotProperFormat_ShouldThrowException" />
       </list>
     </recent_temporary>
   </component>
@@ -123,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668131480553</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added : Code to throw custom exceptions">
+      <created>1668273447495</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668273447495</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,6 +197,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added : User Registration Validation of Name,Email ID, Mobile Number, Password" />
     <MESSAGE value="Added : Parameterised Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added : Parameterised Test" />
+    <MESSAGE value="Added : Code to throw custom exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added : Code to throw custom exceptions" />
   </component>
 </project>
