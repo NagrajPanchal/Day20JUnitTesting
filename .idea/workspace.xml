@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4e85e31-d97c-4ffa-9298-74ed5705e2bf" name="Changes" comment="Added : Code to throw custom exceptions">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/UserValidation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/bridgelabz/UserRegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/UserRegistrationTest.java" afterDir="false" />
     </list>
@@ -17,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -53,7 +55,20 @@
       <recent name="com.bridgelabz" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserRegistrationTest.givenEmail_WhenNotProper_ShouldThrowException">
+  <component name="RunManager" selected="Application.UserRegistrationTest">
+    <configuration name="UserRegistrationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.UserRegistrationTest" />
+      <module name="Day20JUnitTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bridgelabz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserRegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Day20JUnitTesting" />
       <extension name="coverage">
@@ -65,22 +80,6 @@
       <option name="PACKAGE_NAME" value="com.bridgelabz" />
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.UserRegistrationTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserRegistrationTest.FirstName_WhenNotProperFormat_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Day20JUnitTesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bridgelabz.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bridgelabz" />
-      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.UserRegistrationTest" />
-      <option name="METHOD_NAME" value="FirstName_WhenNotProperFormat_ShouldThrowException" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UserRegistrationTest" />
         <item itemvalue="JUnit.UserRegistrationTest.givenEmail_WhenNotProper_ShouldThrowException" />
         <item itemvalue="JUnit.UserRegistrationTest.givenMobileNumber_WhenNotProperFormat_ShouldThrowException" />
         <item itemvalue="JUnit.UserRegistrationTest.givenLastName_WhenNotProperFormat_ShouldThrowException" />
         <item itemvalue="JUnit.UserRegistrationTest" />
-        <item itemvalue="JUnit.UserRegistrationTest.FirstName_WhenNotProperFormat_ShouldThrowException" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668273447495</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added : Code to throw custom exceptions">
+      <created>1668311204881</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668311204881</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
